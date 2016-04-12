@@ -1,0 +1,18 @@
+
+// find number occuring odd number of times
+
+public int findOO(int[] ary){
+  Hashtable<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+  
+  for (int i=0; i<ary.length; i++) {
+    if(ht.get(ary[i]) == null) {
+      ht.put(ary[i], 1);
+    }
+    else {
+      ht.remove(ary[i]);
+    }
+  }
+
+}
+
+
